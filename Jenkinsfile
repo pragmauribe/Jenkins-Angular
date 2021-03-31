@@ -1,6 +1,7 @@
 node {
     stage('Checkout SCM') {
-        git branch: 'main', url: 'https://marlon.gonzalez@git.pragma.com.co/marlon.gonzalez/Jenkins-Angular.git'
+        //git branch: 'main', url: 'https://marlon.gonzalez@git.pragma.com.co/marlon.gonzalez/Jenkins-Angular.git'
+        echo "Staring Checkout..."
     }
 
     stage('Install node modules') {
