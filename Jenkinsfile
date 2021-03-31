@@ -5,14 +5,12 @@ node {
     }
 
     stage('Install node modules') {
+        echo "Staring Install node modules..."
         sh "npm install"
     }
 
-    stage("Test") {
-        sh "npm run test-headless"
-    }
-
     stage("Build") {
+        echo "Staring Build..."
         sh "npm run build --prod"
     }
     
