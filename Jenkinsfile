@@ -18,7 +18,7 @@ pipeline {
                 def scannerHome = tool 'sonar-scanner';
                 withSonarQubeEnv("sonarqube") {
                     sh "${tool("sonar-scanner")}/bin/sonar-scanner \
-                   -Dsonar.projectKey=build-test-node \
+                   -Dsonar.projectKey=pipeline-angular2 \
                    -Dsonar.sources=. \
                    -Dsonar.css.node=. \
                    -Dsonar.host.url=http://192.168.0.105:9000 \
@@ -26,12 +26,18 @@ pipeline {
                }
            }
        }
-   }
+    }
         
     stage('Install dependencies') {
       steps {
         sh 'npm install'
       }
-    }      
+    }
+
+    stage("Test") {
+        echo "Staring testing..."
+        sh "npm run test-headless"
+    }
+
   }
 }
