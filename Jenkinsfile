@@ -8,19 +8,13 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Marl0nGonzalez/Jenkins-Angular.git'
+        git branch: 'main',  url: 'https://github.com/Marl0nGonzalez/Jenkins-Angular'
       }
     }
         
     stage('Install dependencies') {
       steps {
         sh 'npm install'
-      }
-    }
-     
-    stage('Test') {
-      steps {
-         sh 'npm test'
       }
     }      
   }
