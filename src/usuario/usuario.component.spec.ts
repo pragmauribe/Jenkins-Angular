@@ -23,11 +23,11 @@ describe('UsuarioComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('debe  comenzar con el usuario desactivado' , () => {
+  it('should start with the user desactivated' , () => {
     expect(component.usuarioActivo).toBeFalsy();
   });
 
-  it('debe activar el usuario', () => {
+  it('should active the user', () => {
     component.activarUsuario();
     expect(component.usuarioActivo).toBeTruthy();
   });
