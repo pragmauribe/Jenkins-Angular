@@ -35,7 +35,6 @@ pipeline {
     }
 
     stage("Test") {
-        echo "Staring testing..."
         sh "npm run test-headless"
     }
 
