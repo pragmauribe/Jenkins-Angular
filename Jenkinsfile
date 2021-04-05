@@ -5,13 +5,13 @@ pipeline {
   tools {nodejs "nodejs"}
     
   stages {
-        
+    /*   
     stage('Cloning Git') {
       steps {
         git branch: 'main',  url: 'https://github.com/Marl0nGonzalez/Jenkins-Angular'
       }
     }
-    
+    */ 
     stage('Code Quality Check via SonarQube') {
         steps {
             script {
