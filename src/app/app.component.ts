@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-projet-angular';
+
+  constructor (){
+    
+    var addd;
+    var oddd;
+
+    if (addd == oddd){
+      var result = add("a")
+    }
+    function add(params:string) {
+      return null;
+    }
+  };
 }
