@@ -22,7 +22,7 @@ pipeline {
                    -Dsonar.sources=. \
                    -Dsonar.css.node=. \
                    -Dsonar.host.url=http://sonarqube:9000 \
-                   -Dsonar.login=admin
+                   -Dsonar.login=admin \
                    -Dsonar.password=admin"
           }
             }
