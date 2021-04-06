@@ -14,7 +14,7 @@ export class AppComponent {
     var oddd;
 
     if (addd == oddd){
-      var result = add("a")
+      var result = add()
     }
     function add(params:string) {
       return null;
