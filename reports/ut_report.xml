@@ -1,0 +1,26 @@
+<testExecutions version="1">
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should render title" duration="98"/>
+    <testCase name="AppComponent should have as title 'my-projet-angular'" duration="17"/>
+    <testCase name="AppComponent should create the app" duration="11"/>
+  </file>
+  <file path="src/usuario/usuario.component.spec.ts">
+    <testCase name="UsuarioComponent should create" duration="9"/>
+    <testCase name="UsuarioComponent should active the user" duration="88">
+      <failure message="Error">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/usuario/usuario.component.spec.ts:32:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    </testCase>
+    <testCase name="UsuarioComponent should start with the user desactivated" duration="3">
+      <failure message="Error">Error: Expected true to be falsy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/usuario/usuario.component.spec.ts:27:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    </testCase>
+  </file>
+</testExecutions>
