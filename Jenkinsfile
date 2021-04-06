@@ -18,7 +18,7 @@ pipeline {
           def scannerHome = tool 'sonar-scanner'
           withSonarQubeEnv('sonarqube') {
             sh "${tool('sonar-scanner')}/bin/sonar-scanner \
-                   -Dsonar.projectKey=build-test-node \
+                   -Dsonar.projectKey=jenkins-sonarqube-node \
                    -Dsonar.sources=. \
                    -Dsonar.css.node=. \
                    -Dsonar.host.url=http://sonarqube:9000 \
