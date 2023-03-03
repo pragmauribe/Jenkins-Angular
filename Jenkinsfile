@@ -21,7 +21,7 @@ pipeline {
                    -Dsonar.projectKey=jenkins-sonarqube-node \
                    -Dsonar.sources=. \
                    -Dsonar.css.node=. \
-                   -Dsonar.host.url=http://sonarqube:9000 \
+                   -Dsonar.host.url=http://mysonarqube:9000 \
                    -Dsonar.login=admin \
                    -Dsonar.password=admin"
           }
